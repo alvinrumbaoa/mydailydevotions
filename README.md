@@ -7,9 +7,9 @@
  
  ## Technologies used: 
  
- ### MongodDb for database and storage. 
- ### Express JS for  primary usage of it is creating Restful API's what accept request from frontend and send the appropriate response.
- ### React, Next JS for building Components and create client side Application. NextJS for faster production
- ### NodeJS for server side and environment
- ### Chakra UI for Styling the components that can help you build the front-end of web application
- ### API.Bible to call the
+ -MongodDb for database and storage. <br/>
+ -Express JS for  primary usage of it is creating Restful API's what accept request from frontend and send the appropriate response.<br/>
+ -React, Next JS for building Components and create client side Application. NextJS for faster production<br/>
+ -NodeJS for server side and environment<br/>
+ -Chakra UI for Styling the components that can help you build the front-end of web application<br/>
+ -API.Bible to call the<br/>
