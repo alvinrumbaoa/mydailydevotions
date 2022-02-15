@@ -1,8 +1,8 @@
 # Devotion App
- I created this project to just solve the problems of people to go back to the Word of God and Read/Study the Bible and be devoted to Jesus Christ. Like a web developer we create solutions to make life easier and better.  
+ I created this project to just solve the problems of people to go back to the Word of God and Read/Study the Bible and be devoted to Jesus Christ. Like a web developer we create solutions to make life easier and better.  <br/>
  
- -CRUD based application to create Daily Devotions or Bible Reading. 
- -Search for Bible Books, Chapter, Verses that User will like.
+ -CRUD based application to create Daily Devotions or Bible Reading.  <br/>
+ -Search for Bible Books, Chapter, Verses that User will like.<br/>
  -
  
  ## Technologies used: 
