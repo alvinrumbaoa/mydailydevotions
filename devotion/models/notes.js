@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
-const NoteSchema = new.mongoose.Schema({
+const NoteSchema = new mongoose.Schema({
 	title: { 
 		type: String, 
-		required: true ,
+		required: [true, "Please add title"] ,
 		unique: true,
+		trim: true,
 		maxlength: [40, "Title cannot be more than 40 characters"]
 	},
 	description: {
@@ -15,4 +16,4 @@ const NoteSchema = new.mongoose.Schema({
 
 })
 
-module.exports = Mongoose.models.Note || mongoose.models('Note', NoteSchema);
+module.exports = mongoose.models.Note || mongoose.model('Note', NoteSchema);

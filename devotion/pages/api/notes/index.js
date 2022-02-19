@@ -4,7 +4,7 @@ import Note from '../../../models/notes'
 dbConnect();
 
 export default async (req, res) => {
-	const {method} = req.params;
+	const { method } = req;
 	
 	switch (method) {
 		case 'GET':
