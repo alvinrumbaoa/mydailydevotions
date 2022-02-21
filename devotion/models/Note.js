@@ -1,17 +1,22 @@
 const mongoose = require('mongoose');
 
 const NoteSchema = new mongoose.Schema({
-	title: { 
+	verse: { 
 		type: String, 
-		required: [true, "Please add title"] ,
+		required: [true, "Please add Verse"] ,
 		unique: true,
 		trim: true,
-		maxlength: [40, "Title cannot be more than 40 characters"]
+		maxlength: [40, "Verse cannot be more than 40 characters"]
 	},
-	description: {
+	message: {
 		type: String,
 		required: true,
-		maxlength: [200, "Description cannot be more than 200 characters"]
+		maxlength: [200, "Message cannot be more than 200 characters"]
+	},
+	application: {
+		type: String,
+		required: true,
+		maxlength: [200, "Application cannot be more than 200 characters"]
 	}
 
 })

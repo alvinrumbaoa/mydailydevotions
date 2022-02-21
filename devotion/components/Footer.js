@@ -1,10 +1,13 @@
 import React from 'react'
-
+import {Image,Text, Button, Flex, Container, Link, ßText, Heading } from '@chakra-ui/react'
 const Footer = () => {
 	return (
-		<div>
-			<h1>Footer</h1>
-		</div>
+	<Flex p={2} background="teal.800" justify="center">
+		<Link href="https://alvinrumbaoa.dev">
+			<Text color="white">Alvin Rumbaoa ©</Text>
+		</Link>
+		
+	</Flex>
 	)
 }
 
