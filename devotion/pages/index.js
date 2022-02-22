@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import {Box, Link, Image, Heading, Text, Flex, Container, useColorMode,} from '@chakra-ui/react'
-import fetch from 'isomorphic-unfetch';
+import axios from 'axios';
 
-export default function Home({ notes}) {
+export default function Home({notes}) {
   return (
     <div>
       <Head>
@@ -25,7 +25,7 @@ export default function Home({ notes}) {
                     <Heading size="md">Message:</Heading>
                     
                     <Text mb={1} size='md'>{note.message}</Text>
-                    <Heading>Application:</Heading>
+                    <Heading size="md"> Application:</Heading>
                     <Text mb={1} size='md'>{note.application}</Text>
                     </Flex>
                   
@@ -47,5 +47,5 @@ Home.getInitialProps = async () => {
   const res = await fetch('http://localhost:3000/api/notes/')
   const { data } = await res.json()
 
-  return{notes: data}
+  return{notes: data }
 }
