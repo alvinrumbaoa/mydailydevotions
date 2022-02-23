@@ -5,7 +5,6 @@ const NoteSchema = new mongoose.Schema({
 		type: String, 
 		required: [true, "Please add Verse"] ,
 		unique: true,
-		trim: true,
 		maxlength: [40, "Verse cannot be more than 40 characters"]
 	},
 	message: {
